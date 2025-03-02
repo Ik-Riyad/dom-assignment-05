@@ -1,3 +1,8 @@
+document.getElementById("Background-btn").addEventListener('click', function () {
+    document.getElementsByTagName("body")[0].style.background =
+    "#" + bgColor();
+})
+
 const cardsBtn = document.querySelectorAll(".card-btn");
 document.getElementById("day").innerText = `${dayName()},`;
 document.getElementById("date").innerText = currentDate();
