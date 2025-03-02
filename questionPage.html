@@ -1,60 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Questions and Answers</title>
-    <link rel="icon" href="/images/board.png" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-    </style>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              primaryFont: ["Poppins", "sans-serif"],
-            },
-            colors: {
-              clifford: "#da373d",
-              bcground: "#F4F7FF",
-              gradiantBG1: "#3752FD",
-              gradiantBG2: "#6C7FFA",
-              gradiantBG3: "#9BA8F8",
-              smallColor: "#00303C",
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Questions and Answers</title>
+  <link rel="icon" href="/images/board.png" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            primaryFont: ["Poppins", "sans-serif"],
+          },
+          colors: {
+            clifford: "#da373d",
+            bcground: "#F4F7FF",
+            gradiantBG1: "#3752FD",
+            gradiantBG2: "#6C7FFA",
+            gradiantBG3: "#9BA8F8",
+            smallColor: "#00303C",
           },
         },
-      };
-    </script>
-  </head>
+      },
+    };
+  </script>
+</head>
 
-  <body class="bg-bcground font-primaryFont px-36 pt-6">
-    <!-- Header -->
-    <header class="bg-white p-6 rounded-2xl">
-      <nav class="flex justify-between">
+<body class="bg-bcground font-primaryFont px-36 pt-6">
+  <!-- Header -->
+  <header class="bg-white p-6 rounded-2xl">
+    <nav class="flex justify-between">
+      <a href="/index.html">
         <div class="mainLogo flex items-center gap-1 cursor-pointer">
           <img src="/images/logo.png" alt="" />
           <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
         </div>
-        <a href="/index.html">
-        <button class="card-btn bg-gradiantBG1 text-white py-3 px-5">Back to Desk</button>
-        </a>
-      </nav>
-    </header>
+      </a>
+      <a href="/index.html" class="">
+        <button class="card-btn bg-gradiantBG1 text-white py-4 px-5 rounded-md">
+          Back to Desk
+        </button>
+      </a>
+    </nav>
+  </header>
 
-    <!-- Main body -->
-    <main class="py-5 grid grid-cols-4 gap-6">
-        
-    </main>
+  <!-- Main body -->
+  <main class="py-5">
+    <div class="text-center pb-8">
+      <h1 class="text-3xl font-bold">Blogs</h1>
+    </div>
 
-    <script src="/js/function.js"></script>
-    <script src="/js/completeTask.js"></script>
-  </body>
+    <!-- Wuestion 01 -->
+    <div class="mb-6">
+      <h1 class="bg-white p-4 font-semibold text-lg rounded-xl rounded-b-none border-b-2 border-dashed border-gray-200">
+        Question-1: What are the different ways to select an element in the DOM?
+      </h1>
+      <h1 class="bg-white p-4 text-lg rounded-xl rounded-t-none text-gray-500">Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Autem quam aut rem illum magnam a obcaecati adipisci. Inventore, ipsa optio.</h1>
+    </div>
+
+    <!-- Wuestion 02 -->
+    <div class="mb-6">
+      <h1 class="bg-white p-4 font-semibold text-lg rounded-xl rounded-b-none border-b-2 border-dashed border-gray-200">
+        Question-2: What is the difference between innerHTML, innerText, and textContent ?
+      </h1>
+      <h1 class="bg-white p-4 text-lg rounded-xl rounded-t-none text-gray-500">Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Autem quam aut rem illum magnam a obcaecati adipisci. Inventore, ipsa optio.</h1>
+    </div>
+
+    <!-- Wuestion 03 -->
+    <div class="mb-6">
+      <h1 class="bg-white p-4 font-semibold text-lg rounded-xl rounded-b-none border-b-2 border-dashed border-gray-200">
+        Question-3: What is event delegation in the DOM?
+      </h1>
+      <h1 class="bg-white p-4 text-lg rounded-xl rounded-t-none text-gray-500">Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Autem quam aut rem illum magnam a obcaecati adipisci. Inventore, ipsa optio.</h1>
+    </div>
+
+    <!-- Wuestion 04 -->
+    <div class="mb-6">
+      <h1 class="bg-white p-4 font-semibold text-lg rounded-xl rounded-b-none border-b-2 border-dashed border-gray-200">
+        Question-4: What is event bubbling in the DOM?
+      </h1>
+      <h1 class="bg-white p-4 text-lg rounded-xl rounded-t-none text-gray-500">Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Autem quam aut rem illum magnam a obcaecati adipisci. Inventore, ipsa optio.</h1>
+    </div>
+    <!-- Wuestion 05 -->
+    <div class="mb-6">
+      <h1 class="bg-white p-4 font-semibold text-lg rounded-xl rounded-b-none border-b-2 border-dashed border-gray-200">
+        Question-5: How do you create, add, and remove elements using JavaScript?
+      </h1>
+      <h1 class="bg-white p-4 text-lg rounded-xl rounded-t-none text-gray-500">Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Autem quam aut rem illum magnam a obcaecati adipisci. Inventore, ipsa optio.</h1>
+    </div>
+
+  </main>
+
+  <script src="/js/function.js"></script>
+  <script src="/js/completeTask.js"></script>
+</body>
+
 </html>
